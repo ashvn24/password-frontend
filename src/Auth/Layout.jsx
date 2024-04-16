@@ -16,7 +16,7 @@ const Layout = () => {
 
   return (
    
-    <div className="min-h-screen flex justify-center items-center bg-gray-100">
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-blue-900 via-indigo-500 to-cyan-400">
     <div className="flex  bg-white w-fit h-full p-8 rounded-lg shadow-lg">
       <div className='flex flex-col justify-center'>
 

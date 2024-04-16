@@ -42,6 +42,7 @@ const Signin = () => {
                 if (res.status==200){
                     dispatch(Login(res.data))
                     navigate('/index')
+                    toast.success('Signed In Successfully')
                 }
             })
         } catch (error) {
@@ -68,7 +69,6 @@ const Signin = () => {
               id="email"
               name="email"
               autoComplete="email"
-              required
               className="mt-1 p-3 border border-gray-300 block w-full rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
@@ -83,7 +83,6 @@ const Signin = () => {
               id="password"
               name="password"
               autoComplete="current-password"
-              required
               className="mt-1 p-3 border border-gray-300 block w-full rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
