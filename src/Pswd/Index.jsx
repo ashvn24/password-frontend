@@ -254,7 +254,7 @@ const Index = () => {
               className="p-3 bg-red-700 rounded-md text-white font-semibold"
             >
               {" "}
-              Rest
+              Reset
             </button>
           </div>
         </div>
@@ -267,8 +267,8 @@ const Index = () => {
                 </ModalHeader>
                 <ModalBody>
                   {savedata.map((item, index) => (
-                    <div className="flex flex-row gap-4">
-                      <p className="font-bold">{item.name}</p> :{" "}
+                    <div key={index} className="flex flex-row gap-4">
+                      <p  className="font-bold">{item.name}</p> :{" "}
                       <p className="font-medium">{item.password}</p>
                     </div>
                   ))}
